@@ -1,0 +1,22 @@
+Package: SymbolStats
+Title: Estimates the Symbol Entropy of a Given Sequence of Symbols
+Version: 0.1.0
+Authors@R: 
+    person("Mauricio", "A. Valle", , "mauvalle@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1362-2776"))
+Description: A system of functions for estimating 'symbol entropy' from symbol sequences provided, with user-defined parameters.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Depends: 
+    R (>= 2.10)
+LazyData: true
+Imports: 
+    stats (>= 4.3.1)
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3

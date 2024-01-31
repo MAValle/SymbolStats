@@ -1,0 +1,38 @@
+---
+title: "Computation of log variations"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Computation of log variations}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+devtools::load_all(".")
+```
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(SymbolStats)
+```
+
+
+## Estimate the log variations
+
+We can use the package to estimate the log variations between periods. If values are for example, stock prices, then this function computes the returns.
+Also we can compute variations taking values between $L$ periods and taking overlaps.
+
+
+```{r variation-example}
+str(alldata)
+returns_result <- logvariations_computation(prices = alldata$`^GSPC`, P=3, overlap=3)
+str(returns_result)
+```
+
+The result is a vector with all returns of three days of the SP500 with NO overlapping.
