@@ -1,10 +1,10 @@
-## SymbolsStats
+# SymbolsStats
 
 SymbolStasts is an R package for estimating symbol entropy given a sequence of symbols.
 
-# Installation
+## Installation
 
-Use the `devtools` package in `R` to install. In case you don not have it, do:
+Use the `devtools` package in `R` to install. In case you don not have it, do the following script. It is posiible that `R` begins to install also other dependencies. Don't panic.
 
 ```bash
 install.packages("devtools")
