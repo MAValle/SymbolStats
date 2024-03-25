@@ -1,6 +1,6 @@
 # SymbolsStats
 
-SymbolStasts is an R package for estimating symbol entropy given a sequence of symbols.
+SymbolStasts is an R package for estimating symbol entropy given a sequence of symbols. It also includes a function to compute the Fisher Information.
 
 ## Installation
 
